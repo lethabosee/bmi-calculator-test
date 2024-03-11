@@ -2,7 +2,7 @@ height = float(input("enter height in meters:"))
 weight = float(input("enter weight in kgs:"))
 
 def BMI(height , weight):
-    bmi= weight/(height**2)*703
+    bmi= weight/(height**2)
 
     if (bmi<16):
         return "severely underweight" ,bmi
