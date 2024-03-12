@@ -1,11 +1,11 @@
-height = float(input("enter height in meters:"))
+height = float(input("enter height in meters:"))    #create variable == input string , use float for accurate values , applies to weight variable aswell
 weight = float(input("enter weight in kgs:"))
 
-def BMI(height , weight):
+def BMI(height , weight):   #define BMI formula to carry out calculations 
     bmi= weight/(height**2)
 
-    if (bmi<16):
-        return "severely underweight" ,bmi
+    if (bmi<16):                  # standard bmi measurements used worldwide to determine different categories 
+        return "severely underweight" ,bmi      #if number falls within mentioned category , broadcast "category"
 
     elif(bmi>=16 and bmi<18.5):
         return "underweight" ,bmi
@@ -21,4 +21,4 @@ def BMI(height , weight):
 
 
 quote, bmi=BMI(height,weight)
-print("your bmi is: {} and you are: {}" .format(bmi,quote)) 
+print("your bmi is: {} and you are: {}" .format(bmi,quote))   # answer will be relayed according to following strings 
