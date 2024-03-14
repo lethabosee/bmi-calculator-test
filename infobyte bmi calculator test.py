@@ -1,3 +1,5 @@
+import math #built in function 
+
 height = float(input("enter height in meters:"))    #create variable == input string , use float for accurate values , applies to weight variable aswell
 weight = float(input("enter weight in kgs:"))
 
